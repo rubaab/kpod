@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="HTML5 Template Iteck Multi-Purpose themeforest">
+    <meta name="description" content="Iteck - Multi-Purpose HTML5 Template">
+    <meta name="author" content>
+
+    <!-- Title  -->
+    <title>KPoD | Contact</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" title="Favicon" sizes="16x16">
+
+    <!-- ====== bootstrap icons cdn ====== -->
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- ====== font family ====== -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/lity.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/signin.css">
+
+
+    <!-- ====== global style ====== -->
+    <link rel="stylesheet" href="css/style.css">
+<style>
+     .loader {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 50px; /* Adjust the width as needed */
+      height: 50px; /* Adjust the height as needed */
+      animation: spin 1s linear infinite;
+      margin: 0 auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .hidden {
+      display: none;
+    }
+</style>
+ 
+</head>
+
+<body>
+
+    <!-- ====== start top navbar ====== -->
+    <div class="top-navbar style-4">
+        <div class="container">
+            <div class="content text-white">
+                <!-- <span class="btn sm-butn bg-white py-0 px-2 me-2 fs-10px" style="cursor:default;">
+              <small class="fs-10px">Special</small>
+            </span>
+            <img src="images/imoj_heart.png" alt class="icon-15" />
+            <span class="fs-10px op-6">Get </span>
+            <small class="op-10 fs-10px">20% Discount</small> -->
+                <!-- <span class="fs-10px op-6">Get for New Account</span>
+                <a href="pricing.html" class="fs-10px text-decoration-underline ms-2" style="color: white;">Subscribe
+                    Now</a> -->
+            </div>
+        </div>
+    </div>
+    <!-- ====== end top navbar ====== -->
+
+    <!-- ====== start navbar ====== -->
+    <nav class="navbar navbar-expand-lg navbar-light style-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo_pod.png" alt>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-uppercase">
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link active   " href="#" id="navbarDropdown1" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Homes
+                        </a>
+                    </li> -->
+
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <li><a class="dropdown-item" href="page-about-app.html">about</a></li>
+                            <li><a class="dropdown-item" href="page-product-app.html">product</a></li>
+                            <li><a class="dropdown-item" href="page-services-app.html">services</a></li>
+                            <li><a class="dropdown-item" href="page-shop-app.html">shop</a></li>
+                            <li><a class="dropdown-item" href="page-single-project-app.html">single project</a></li>
+                            <li><a class="dropdown-item" href="page-single-post-app.html">single post</a></li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://kpoddoc.kaispe.com/" tartget="_blank">
+                            Documentation
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pricing.html">
+                            Pricing
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.kaispe.com/resources/blogs/" target="_blank">
+                            blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-side">
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown">
+                        <button class="dropbtn" onclick="toggleDropdown()">Sign In</button>
+                        <div class="dropdown-content" id="dropdownContent">
+                          <a><img src="./images/logo_pod.png" alt=""  height="30px" width="150px"  style="margin-right: 100px; margin-top: 20px;"></a>
+                          <p style="font-size: 20px; font-weight: bold; margin-top: -10px;">Welcome</p>
+                          <p style="margin-top: -10px; margin-bottom: -10px;">Please enter company name</p>
+                        <form id="urlForm">
+                          <p>kpodportal.kaispe.com/ <input type="text" id="urlInput" placeholder="Company" required style="width: 150px; height: 35px; border-radius: 20px; border: 1px solid #ccc; padding-left: 10px; margin-left: 10px; "></p>
+                          <button type="submit" style="width: 200px; height: 40px; border-radius: 20px; border: 1px solid #ccc; background-color: #5842bc; color: white; font-weight: bold; font-size: 20px; margin-left: 100px; margin-top: 20px;">Login</button>
+                        </form>                             
+                        </div>
+                      </div>
+                      <a href="https://kspcs.powerappsportals.com/customer-landing/" target="_blank"
+                        class="btn rounded-pill brd-gray hover-blue4 sm-butn fw-bold">
+                        <span>Support Portal</span>
+                      </a>
+                    </div>
+                  </div>
+            </div>
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-uppercase">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Homes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <li><a class="dropdown-item" href="home-it-solutions2.html"> It Solution creative </a></li>
+                            <li><a class="dropdown-item" href="home-app-landing.html"> App Landing </a></li>
+                            <li><a class="dropdown-item" href="home-saas-technology.html"> Saas Technology </a></li>
+                            <li><a class="dropdown-item" href="home-marketing-startup.html"> Marketing Startup </a></li>
+                            <li><a class="dropdown-item" href="home-it-solutions.html"> It Solution </a></li>
+                            <li><a class="dropdown-item" href="home-software-company.html"> Software Company </a></li>
+                            <li><a class="dropdown-item" href="home-digital-agency.html"> Digital Agency </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            pages
+                            <small class="hot alert-danger text-danger">hot</small>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <li><a class="dropdown-item" href="page-about-app.html">about</a></li>
+                            <li><a class="dropdown-item" href="page-product-app.html">product</a></li>
+                            <li><a class="dropdown-item" href="page-services-app.html">services</a></li>
+                            <li><a class="dropdown-item" href="page-shop-app.html">shop</a></li>
+                            <li><a class="dropdown-item" href="page-single-project-app.html">single project</a></li>
+                            <li><a class="dropdown-item" href="page-single-post-app.html">single post</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-portfolio-app.html">
+                            portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-blog-app.html">
+                            blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-contact-app.html">
+                            <img src="images/price.png" alt class="icon-15 me-1">
+                            contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-side">
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="search-icon me-4">
+                            <i class="bi bi-person"></i>
+                        </a>
+                        <a href="page-contact-app.html" class="btn rounded-pill brd-gray hover-blue4 sm-butn fw-bold">
+                            <span>Join iteck Hub <i class="bi bi-arrow-right ms-1"></i> </span>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </nav>
+    <!-- ====== end navbar ====== -->
+
+    <!--Contents-->
+    <main class="contact-page style-5">
+        <!-- ====== start contact page ====== -->
+        <section class="community section-padding style-5">
+            <div class="container">
+                <div class="section-head text-center style-4 mb-40">
+                    <small class="title_small">Contact us</small>
+                    <h2 class="mb-20">Get In <span> Touch </span> </h2>
+                    <p>Please share your details, and we will get back to you, or feel free to contact us</p>
+                </div>
+                <div class="content rounded-pill">
+                    <div class="commun-card">
+                        <div class="icon icon-45">
+                            <img src="images/mail3d.png" alt>
+                        </div>
+                        <div class="inf" style="margin-right: 60px;">
+                            <h5>Email</h5>
+                            <br>
+                            <h6><a href="mailto:huzshaikh042@gmail.com">info@kaispe.com </a></h6>
+                        </div>
+                    </div>
+                    <div class="commun-card">
+                        <div class="icon icon-45">
+                            <img src="images/map3d.png" alt>
+                        </div>
+                        <div class="inf">
+                            <h5>Address</h5>
+                            <br>
+                            <h6>590 Madison Avenue, 21st Floor, Manhattan, NY 10022 USA.</h6>
+                        </div>
+                    </div>
+                    <div class="commun-card">
+                        <div class="icon icon-45">
+                            <img src="images/msg3d.png" alt>
+                        </div>
+                        <div class="inf" style="margin-right: 70px;">
+                            <h5>Contact</h5>
+                            <br>
+                            <h6>USA: (+1)-315-791-4472</h6>
+                            <h6>PAK: (+92)-213-432-6085</h6>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact section-padding pt-0 style-6">
+            <div class="container">
+                <div class="content">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <form class="form" name="formsubmit" id="formsubmit"h>
+                               
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-20">
+                                            <input type="text" name="name" id="name" required class="form-control"
+                                                placeholder="Name *">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-20">
+                                            <input type="text" name="email" id="email" required class="form-control"
+                                                placeholder="Email Address *">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group mb-20">
+                                            <input type="text" name="phoneNo" id="contactNo" required class="form-control"
+                                                placeholder="Contact Number *">
+                                        </div>
+                                    </div>    
+                                    <!-- <div class="col-lg-6">
+                                        <div class="form-group mb-20">
+                                            <input type="text" name="website" id="website" class="form-control"
+                                                placeholder="Website ">
+                                        </div>
+                                    </div> -->
+                                    <!-- <div class="col-lg-12">
+                                        <div class="form-group mb-20">
+                                            <select name="option" class="form-select">
+                                                <option value="how can we help" selected>How can we help you?</option>
+                                                <option value="option 1">option 1</option>
+                                                <option value="option 2">option 2</option>
+                                            </select>
+                                        </div>
+                                    </div> -->
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <textarea rows="10" class="form-control" name="description" 
+                                                id="message" placeholder="How can we help you? (Optional)"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 text-center">
+                                        <div class="form-check d-inline-flex mt-30 mb-30">
+                                            <!-- <input class="form-check-input me-2 mt-0" type="checkbox" value id="flexCheckDefault">
+                                            <label class="form-check-label small" for="flexCheckDefault">
+                                                I accept the  <a href="./images/KAISPE_Agreement.pdf" target="_blank" class="text-decoration-underline" style="color:#8a31ff;" >Subscription Agreement</a> on behalf of the represented company
+                                            </label> -->
+                                        </div>
+                                    </div>
+                                    <div id="loader" class="loader hidden" style="margin-top: 5px; margin-bottom: -20px;"></div>
+                                    <div id="success" class="alert" role="alert" style="text-align: center; color: green; margin-left: 30px;"></div>
+                                    <div class="col-lg-12 text-center">
+                                        <button type="submit"
+                                        id="submitBtn"
+                                            class="btn rounded-pill bg-blue4 fw-bold text-white text-light fs-12px">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <img src="images/contact_a.png" alt class="contact_a">
+                    <img src="images/contact_message.png" alt class="contact_message">
+                </div>
+            </div>
+        </section>
+
+
+        <script>
+            let formvalidation = document.getElementById("formsubmit");
+            function toTitleCase(str) {
+              return str.replace(/\b\w/g, (match) => match.toUpperCase());
+            }
+ 
+
+            formvalidation.addEventListener("submit", (e) => {
+              e.preventDefault();
+        
+              let name = document.getElementById("name");
+              let email = document.getElementById("email");
+              let contactNo = document.getElementById("contactNo");
+              let message = document.getElementById("message");
+        
+              if (name.value === "" || email.value === "" || contactNo.value === "" ) {
+                alert("All the fieleds are required");
+              } else {
+                const titleCaseName = toTitleCase(name.value);
+                const data ={name: titleCaseName.value, email: email.value, contactNo: contactNo.value, message: message.value}
+                loadDoc({name: titleCaseName, email: email.value, contactNo: contactNo.value, message: message.value});
+                name.value = "";
+                email.value = "";
+                contactNo.value = "";
+                message.value = "";
+              }
+            });
+        
+        function loadDoc(data) {
+        var loader = document.getElementById("loader");
+        var successDiv = document.getElementById("success");
+        var submitBtn = document.getElementById("submitBtn");
+      
+        loader.classList.remove("hidden");
+        successDiv.innerHTML = "";
+   
+        const xhttp = new XMLHttpRequest();
+        xhttp.open("POST", 'https://kpodapi.azurewebsites.net/api/v1/global/sendMail', true);
+        xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      
+        xhttp.onreadystatechange = function() {
+          if (xhttp.readyState === XMLHttpRequest.DONE) {
+            loader.classList.add("hidden");
+            submitBtn.disabled = true;
+      
+            if (xhttp.status === 200) {
+              successDiv.innerHTML = "This form has been successfully submitted!";
+                setTimeout(() => {
+                    successDiv.innerHTML = "";
+                }, 5000);
+            }
+          }
+        };
+      
+        xhttp.send(JSON.stringify(data));
+            }
+          </script>
+        <!-- ====== end contact page ====== -->
+
+        <!-- ====== start contact page ====== -->
+        <div class="map">
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24219.60999175365!2d-73.9764341314902!3d40.64198229194528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b400c94a227%3A0x18e2a4d3fb21f0ec!2sFlatbush%2C%20Brooklyn%2C%20NY%2C%20USA!5e0!3m2!1sen!2seg!4v1651361759450!5m2!1sen!2seg" height="500" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.9932205171344!2d-73.97508198509394!3d40.76217384248225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258faeafe70af%3A0x1e5ecb8daf05dff6!2s590%20Madison%20Ave%2021st%20floor%2C%20New%20York%2C%20NY%2010022%2C%20USA!5e0!3m2!1sen!2s!4v1677756316007!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <!-- ====== start contact page ====== -->
+    </main>
+    <!--End-Contents-->
+
+    <!-- ====== start footer ====== -->
+    <footer class="style-4 pt-100 mt-0">
+        <div class="container">
+            <div class="section-head text-center style-4">
+                <h2 class="mb-10"> Ready To <span> Download </span> </h2>
+                <p>Get it from Google Play Store</p>
+                <div class="d-flex align-items-center justify-content-center mt-50">
+                    <!-- <a href="https://www.apple.com/app-store/" class="btn rounded-pill bg-blue4 fw-bold text-white me-4" target="_blank">
+                        <small> <i class="fab fa-apple me-2 pe-2 border-end"></i> Download On App Store </small>
+                    </a> -->
+                    <a href="https://play.google.com/store/apps/details?id=com.ksp.pod_app"
+                        class="btn rounded-pill bg-blue4 fw-bold text-white me-4" target="_blank">
+                        <small> <i class="fab fa-google-play me-2 pe-2 border-end"></i> Download On Google Play </small>
+                    </a>
+                </div>
+            </div>
+            <div class="foot mt-80">
+                <div class="row align-items-center">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <img src="images/logo_pod.png" alt style="height: 20px; width: 80px; margin-left: 40px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+
+                    </div>
+                    <div class="col-lg-2">
+                            <div class="widget social-widget pl-xl-5" >
+                              <h5 class="widget-title">Follow On</h5>
+                              <ul class="social-links" style="display: flex;">
+                                <!-- <li><a href="#"><i class="fab fa-facebook-f"></i></a></li> -->
+                                <li style="margin: 10px;">
+                                  <a
+                                    href="https://twitter.com/kaispe_?lang=en"
+                                    target="_blank"
+                                    ><i class="fab fa-twitter"></i
+                                  ></a>
+                                </li>
+                                <li  style="margin: 10px;">
+                                  <a
+                                    href="https://pk.linkedin.com/company/kaispe"
+                                    target="_blank"
+                                    ><i class="fab fa-linkedin"></i
+                                  ></a>
+                                </li>
+                                <liv style="margin: 10px;">
+                                  <a
+                                    href="https://www.youtube.com/@kaispe"
+                                    target="_blank"
+                                    ><i class="fab fa-youtube"></i
+                                  ></a>
+                                </li>
+                              </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copywrite text-center">
+                <small class="small">
+                    © 2023 Copyrights by <a href="https://www.kaispe.com/" target="_blank"
+                        class="fw-bold text-decoration-underline">KAISPE.</a> All Rights Reserved.
+                </small>
+            </div>
+        </div>
+    </footer>
+    <!-- ====== end footer ====== -->
+
+    <!-- ====== start to top button ====== -->
+    <a href="#" class="to_top bg-gray rounded-circle icon-40 d-inline-flex align-items-center justify-content-center">
+        <!-- <i class="bi bi-chevron-up fs-6 text-dark"></i> -->
+        <i class="fa fa-arrow-up fs-6 text-dark"></i>
+    </a>
+    <!-- ====== end to top button ====== -->
+
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+   
+
+    <!-- ====== request ====== -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="js/validate.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="js/validate.js"></script>
+
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/lity.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+    <script src="js/pace.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

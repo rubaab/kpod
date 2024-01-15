@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="HTML5 Template Iteck Multi-Purpose themeforest">
+    <meta name="description" content="Iteck - Multi-Purpose HTML5 Template">
+    <meta name="author" content>
+
+    <!-- Title  -->
+    <title>KPoD | Pricing</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" title="Favicon" sizes="16x16">
+
+    <!-- ====== bootstrap icons cdn ====== -->
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- ====== font family ====== -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/lity.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/signin.css">
+
+    <!-- ====== global style ====== -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .btn-outline-primary:hover {
+            color: white;
+            background-color: #8a31ff;
+            /* new color goes her */
+            border-color: #8a31ff;
+        }
+
+        .btn-outline-primary {
+            color: #8a31ff;
+
+        }
+
+        .btn-check:focus+.btn-outline-primary,
+        .btn-outline-primary:focus {
+            box-shadow: 0 0 0 0.25rem #8a31ff;
+        }
+
+        .btn-outline-primary.focus {
+            box-shadow: rgba(138, 49, 255, 0.5) !important;
+            border-color: #8a31ff !important;
+        }
+
+        .btn-check:checked+.btn-outline-primary:focus {
+            box-shadow: rgba(138, 49, 255, 0.5);
+            border-color: #8a31ff !important;
+        }
+
+        .btn-check:checked+.btn-outline-primary {
+            background-color: #8a31ff;
+            border-color: #8a31ff;
+        }
+
+        .btn-outline-primary {
+            /* color: #6300e4; */
+            border-radius: 50px !important;
+            border: 1px solid #8a31ff;
+        }
+
+        /* .btn btn-outline-primary{
+    color: #8a31ff;
+} */
+        /* #pricing:focus{
+    background-color: #8a31ff;
+
+} */
+        #plandiv:hover {
+
+            border-color: 1px solid #8a31ff;
+        }
+
+        #plan:hover {
+            background-color: #8a31ff;
+            color: white;
+            border: 1px solid #8a31ff;
+        }
+
+        input:focus {
+            border: #8a31ff;
+            background-color: #8a31ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ====== start top navbar ====== -->
+    <div class="top-navbar style-4">
+        <div class="container">
+            <div class="content text-white">
+                <!-- <span class="btn sm-butn bg-white py-0 px-2 me-2 fs-10px" style="cursor:default;">
+                    <small class="fs-10px">Special</small>
+                </span>
+                <img src="images/imoj_heart.png" alt class="icon-15" />
+                <span class="fs-10px op-6">Get </span>
+                <small class="op-10 fs-10px">20% Discount</small> -->
+                <!-- <span class="fs-10px op-6">Get for New Account</span>
+                <a href="pricing.html" class="fs-10px text-decoration-underline ms-2" style="color: white;">Subscribe
+                    Now</a> -->
+            </div>
+        </div>
+    </div>
+    <!-- ====== end top navbar ====== -->
+
+    <!-- ====== start navbar ====== -->
+    <nav class="navbar navbar-expand-lg navbar-light style-4" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="images/logo_pod.png" alt>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-uppercase">
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" id="navbarDropdown1" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Homes
+                        </a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://kpoddoc.kaispe.com/" target="_blank">
+                            Documentation
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./pricing.html">
+                            Pricing
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.kaispe.com/resources/blogs/" target="_blank">
+                            blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-side">
+                    <div class="d-flex align-items-center">
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="toggleDropdown()">Sign In</button>
+                            <div class="dropdown-content" id="dropdownContent">
+                                <a><img src="./images/logo_pod.png" alt="" height="30px" width="150px"
+                                        style="margin-right: 100px; margin-top: 20px;"></a>
+                                <p style="font-size: 20px; font-weight: bold; margin-top: -10px;">Welcome</p>
+                                <p style="margin-top: -10px; margin-bottom: -10px;">Please enter company name</p>
+                                <form id="urlForm">
+                                    <p>kpodportal.kaispe.com/ <input type="text" id="urlInput" placeholder="Company"
+                                            required
+                                            style="width: 150px; height: 35px; border-radius: 20px; border: 1px solid #ccc; padding-left: 10px; margin-left: 10px; ">
+                                    </p>
+                                    <button type="submit"
+                                        style="width: 200px; height: 40px; border-radius: 20px; border: 1px solid #ccc; background-color: #5842bc; color: white; font-weight: bold; font-size: 20px; margin-left: 100px; margin-top: 20px;">Login</button>
+                                </form>
+                            </div>
+                        </div>
+                        <a href="https://kspcs.powerappsportals.com/customer-landing/" target="_blank"
+                            class="btn rounded-pill brd-gray hover-blue4 sm-butn fw-bold">
+                            <span>Support Portal</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ====== end navbar ====== -->
+
+    <!--Contents-->
+    <section class="pricing section-padding style-4 pb-50">
+        <div class="container">
+            <div class="section-head text-center style-4">
+                <small class="title_small">Pricing Plan</small>
+                <h2 class="mb-40"> Start with <span> Affordable Price </span> </h2>
+            </div>
+
+            <!-- <div class="text-center pb-50 row">
+                
+                <div class="col-lg-3">
+                </div>
+                <div class="btn-group col-lg-6 text-center " id="radiobutton">
+                    <input type="radio" class="btn-check" name="options" id="radio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary " id="radiobutton" for="radio1" onclick="doSomething(1)"> 1 Year</label>
+                
+                    <input type="radio" class="btn-check" name="options" id="radio2" autocomplete="off" >
+                    <label class="btn btn-outline-primary " for="radio2"onclick="doSomething(2)"> 2 Year</label>
+                
+                    <input type="radio" class="btn-check" name="options" id="radio3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="radio3" onclick="doSomething(3)"> 3 Year</label>
+                </div>
+                <div class="col-lg-3">
+                </div> -->
+            <!-- 
+                <div class="col-lg-2" style="height: 40px; border: 1px solid rgb(90, 53, 177); padding: 10px;">
+                    <input type="radio" name="year" value="1year" onclick="doSomething();">
+                    <label style="font-weight: bold; margin-left: 10px; color: rgb(90, 53, 177);"></label><br>
+                </div>
+                <div class="col-lg-2" style="height: 40px; border: 1px solid rgb(90, 53, 177); padding: 10px;">
+                    <input type="radio" name="year" value="2year" onclick="doSomething();">
+                    <label style="font-weight: bold; margin-left: 10px; color: rgb(90, 53, 177);"> 2 Year</label><br>
+                </div>
+                <div class="col-lg-2" style="height: 40px; border: 1px solid rgb(90, 53, 177); padding: 10px;">
+                    <input type="radio" name="year" value="3year" onclick="doSomething();">
+                    <label style="font-weight: bold; margin-left: 10px; color: rgb(90, 53, 177);"> 3 Year</label><br>
+                </div> -->
+            <!-- </div> -->
+
+            <!-- <section class="community section-padding style-5">
+                <div class="container">
+                    <div class="section-head text-center style-4">
+                        <small class="title_small">Pricing Plan</small>
+                        <h2 class="mb-40"> Start With <span> Affordable Price </span> </h2>
+                    </div>
+                    <div class="content rounded-pill border-blue4">
+                        <div class="commun-card hover-blue4 border-blue4 " >
+                       
+                            <div class="inf">
+                                <input type="radio" name="year" value="1year" onclick="doSomething();">
+                                <label  style="font-weight: bold; margin-left: 10px;"> 1 Year</label><br>
+                            </div>
+                        </div>
+                        <div class="commun-card hover-blue4 border-blue4 ">
+                           
+                            <div class="inf">
+                                <input type="radio" name="year" value="2year" onclick="doSomething();">
+                                <label style="font-weight: bold; margin-left: 10px;"> 2 Year</label><br>
+                            </div>
+                        </div>
+                        <div class="commun-card hover-blue4 border-blue4 ">
+                            
+                            <div class="inf">
+                                <input type="radio" name="year" value="3year" onclick="doSomething();">
+                                <label  style="font-weight: bold; margin-left: 10px;"> 3 Year</label><br>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <div class="content">
+                <div class="toggle_switch d-flex align-items-center justify-content-center mb-40">
+                    <!-- <div class="form-check form-switch p-0">
+                        <label class="form-check-label" for="flexSwitchCheckDefault"><small>Billed
+                                monthly</small></label>
+                        <input class="form-check-input float-none bg-blue4" type="checkbox"
+                            id="flexSwitchCheckDefault" checked onclick="doSomething();">
+                        <label class="form-check-label" for="flexSwitchCheckDefault"><small>Billed
+                                annually</small></label>
+                    </div> -->
+                </div>
+                <div class="row gx-0">
+                    <div class="col-lg-4">
+                        <div class="price-card">
+                            <div class="price-header pa-4">
+                                <h3>Free</h3>
+
+                                <h2 id="free">$ <span id="freePlan">0</span><small
+                                        style="font-weight: bold;">/user</small></h2>
+                                <p
+                                    style="background-color: rgb(240, 191, 100); padding-left: 10px; color: black; border-radius: 20px; font-weight: bold;">
+                                    A 1 week
+                                    plan</p>
+                                <p style=" padding-left: 5px; padding-bottom: 20px;">*Min 1 User</p>
+                            </div>
+
+                            <div class="price-body pa-4" style=" padding: 20px 0px 50px 20px; ">
+                                <ul>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30  bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                            <!-- <i class="far fa-sticky-note"></i> 
+                                         <i class="fa fa-arrow-right"></i> -->
+                                            <i class="fa fa-chevron-right"></i>
+                                        </small>
+                                        <div class="row" style="width: 100%;">
+                                            <div class="col-lg-10">
+                                                <p class="fw-bold">Delivery schedule management</p>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <!-- <p>20.00$</p> -->
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                            <!-- <i class="far fa-sticky-note"></i> -->
+                                            <!-- <i class="fa fa-arrow-right"></i> -->
+                                            <i class="fa fa-chevron-right"></i>
+                                        </small>
+                                        <div class="row" style="width: 100%;">
+                                            <div class="col-lg-10">
+                                                <p class="fw-bold">Invoice or packing slip update</p>
+                                            </div>
+                                            <!-- <div class="col-lg-2">
+                                                <p>18.00$</p>
+                                            </div> -->
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                            <!-- <i class="far fa-sticky-note"></i> -->
+                                            <!-- <i class="fa fa-arrow-right"></i> -->
+                                            <i class="fa fa-chevron-right"></i>
+                                        </small>
+                                        <div class="row" style="width: 100%;">
+                                            <div class="col-lg-10">
+                                                <p class="fw-bold">Customer signature and comments capture</p>
+                                            </div>
+                                            <!-- <div class="col-lg-2">
+                                                <p>12.00$</p>
+                                            </div> -->
+                                    </li>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                            <!-- <i class="far fa-sticky-note"></i> -->
+                                            <!-- <i class="fa fa-arrow-right"></i> -->
+                                            <i class="fa fa-chevron-right"></i>
+                                        </small>
+                                        <div class="row" style="width: 100%;">
+                                            <div class="col-lg-10">
+                                                <p class="fw-bold">QR code to pull relevant delivery document</p>
+                                            </div>
+                                            <!-- <div class="col-lg-2">
+                                            <p>12.00$</p>
+                                        </div> -->
+                                    </li>
+                                </ul>
+                                <a class="btn rounded-pill hover-blue4 fw-bold mt-50 px-5 border-blue4"> <!-- <a id="myBtn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight"
+                            class="btn rounded-pill hover-blue4 fw-bold mt-50 px-5 border-blue4"> -->
+                                    <small>Subscribe Now </small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4">
+                        <div class="price-card">
+                            <div class="price-header pb-4">
+                                <h3>Basic</h3>
+                                <!-- <h6> <img src="images/price_s4_1.png" alt class="icon"> basic Plan </h6> -->
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h2 id="basic">$<span id="basicPlan">14.00</span><small
+                                                style="font-weight: bold;">/user</small></h2>
+                                        <p
+                                            style="background-color: rgb(240, 191, 100); padding-left: 10px; color: black; border-radius: 20px; font-weight: bold;">
+                                            With a 3-yr
+                                            plan (36% savings)</p>
+                                        <p style=" padding-left: 5px;">*Min 5 Users</p>
+                                        <!-- <h2 id="basicset"><small> / month</small></h2> -->
+                                    </div>
+                                    <!-- <div class="col-lg-6 pt-20" id="element">
+                                        <select onchange="val()" id="select_id" style="width: 80%; height: 40px; padding: 10px; border-radius: 15px; font-weight: bold;">
+                                            <option value="1 Year">1 Year</option>
+                                            <option value="2 Year">2 Year</option>
+                                            <option value="3 Year">3 Year</option>
+                                          </select>
+                                    </div> -->
+                                    <!-- <div class="content rounded-pill border-blue4"> -->
+                                    <!-- <div class="row"  style="margin-top: 20px;">
+                                        <div class="commun-card hover-blue4 border-blue4  col-lg-2" >
+                                       
+                                            <div class="inf">
+                                                <input type="radio" name="year" value="1" id="radio1" onclick="val(1)" checked>
+                                                <label  style="font-weight: bold; margin-left: 10px;" >1Y</label><br>
+                                            </div>
+                                        </div>
+                                        <div class="commun-card hover-blue4 border-blue4 col-lg-2 ">
+                                           
+                                            <div class="inf">
+                                                <input type="radio" name="year" value="2" id="radio2" onclick="val(2)">
+                                                <label style="font-weight: bold; margin-left: 10px;" >2Y</label><br>
+                                            </div>
+                                        </div>
+                                        <div class="commun-card hover-blue4 border-blue4 col-lg-2">
+                                            
+                                            <div class="inf">
+                                                <input type="radio" name="year" value="3" id="radio3" onclick="val(3)">
+                                                <label  style="font-weight: bold; margin-left: 10px;">3Y</label><br>
+                    
+                                            </div>
+                                        </div>
+
+                                    </div> -->
+
+                                    <!-- </div> -->
+
+
+                                </div>
+
+                                <!-- <p>Free 3 days trial</p> -->
+
+                            </div>
+
+                            <div class="price-body py-4">
+                                <ul>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30  bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                            <!-- <i class="far fa-sticky-note"></i> -->
+                                            <!-- <i class="fa fa-arrow-right"></i> -->
+                                            <i class="fa fa-chevron-right"></i>
+                                        </small>
+                                        <div class="row" style="width: 100%;">
+                                            <div class="col-lg-10">
+                                                <p class="fw-bold">Delivery schedule management</p>
+                                            </div>
+                                            <!-- <div class="col-lg-2">
+                                            <p>20.00$</p>
+                                        </div> -->
+
+                                        </div>
+                                        <!-- <p class="fw-bold">5 to 10 users</p> -->
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                            <!-- <i class="far fa-sticky-note"></i> -->
+                                            <!-- <i class="fa fa-arrow-right"></i> -->
+                                            <i class="fa fa-chevron-right"></i>
+                                        </small>
+                                        <div class="row" style="width: 100%;">
+                                            <div class="col-lg-10">
+                                                <p class="fw-bold">Invoice or packing slip update</p>
+                                            </div>
+                                            <!-- <div class="col-lg-2">
+                                                <p>18.00$</p>
+                                            </div> -->
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                            <!-- <i class="far fa-sticky-note"></i> -->
+                                            <!-- <i class="fa fa-arrow-right"></i> -->
+                                            <i class="fa fa-chevron-right"></i>
+                                        </small>
+                                        <div class="row" style="width: 100%;">
+                                            <div class="col-lg-10">
+                                                <p class="fw-bold">Customer signature and comments capture</p>
+                                            </div>
+                                            <!-- <div class="col-lg-2">
+                                                <p>12.00$</p>
+                                            </div> -->
+                                    </li>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                            <!-- <i class="far fa-sticky-note"></i> -->
+                                            <!-- <i class="fa fa-arrow-right"></i> -->
+                                            <i class="fa fa-chevron-right"></i>
+                                        </small>
+                                        <div class="row" style="width: 100%;">
+                                            <div class="col-lg-10">
+                                                <p class="fw-bold">QR code to pull relevant delivery document</p>
+                                            </div>
+                                            <!-- <div class="col-lg-2">
+                                            <p>12.00$</p>
+                                        </div> -->
+                                    </li>
+                                    <!-- <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30 bg-white rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                        </small>
+                                        <div class="row" style="width: 100%;">
+                                            <div class="col-lg-10">
+                                            </div>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30 bg-white rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                        </small>
+                                        <div class="row" style="width: 100%;">
+                                            <div class="col-lg-10">
+                                            </div>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30 bg-white rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                        </small>
+                                        <div class="row" style="width: 100%;">
+                                            <div class="col-lg-10">
+                                            </div>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30 bg-white rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                        </small>
+                                        <div class="row" style="width: 100%;">
+                                            <div class="col-lg-10">
+                                            </div>
+                                    </li>    -->
+                                </ul>
+                                <a id="myBtn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight"
+                                    class="btn rounded-pill hover-blue4 fw-bold mt-50 px-5 border-blue4">
+                                    <small>Subscribe Now </small>
+                                </a>
+                            </div>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header" style="margin-top: 100px;">
+                                    <h5 id="offcanvasRightLabel"
+                                        style="color: #8a31ff; margin-left: 10px; font-weight: bold;">Basic Pricing
+                                        Plans</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="container">
+                                        <div class="row" style="border: 2px solid rgb(218, 213, 248); width: 100%;"
+                                            id="plandiv">
+                                            <div class="col-lg-6" style=" height: 40px;  padding-top: 10px;" id="plan">
+                                                <input type="radio" name="payment" value="mb1" id="paypal"
+                                                    style="margin-right: 10px;">
+                                                1 Month
+                                            </div>
+                                            <div class="col-lg-6"
+                                                style=" height: 40px; padding-top: 10px; font-weight: bold; padding-left: 60px;">
+                                                $22.00/user
+                                            </div>
+                                        </div>
+
+                                        <div class="row"
+                                            style="border: 2px solid rgb(218, 213, 248); height:80px ; width: 100%; margin-top: 20px;">
+                                            <div class="col-lg-6" style=" height: 80px;  padding-top: 30px;" id="plan">
+                                                <input type="radio" name="payment" value="mb12" id="m12"
+                                                    style="margin-right: 10px;">
+                                                12 Months
+                                            </div>
+                                            <div class="col-lg-6"
+                                                style=" height: 76px; padding-top: 20px; font-weight: bold; padding-left: 60px;">
+                                                $20.00/user
+                                                <p style="font-weight: 300;">9% Save</p>
+                                            </div>
+                                        </div>
+                                        <div class="row"
+                                            style="border: 2px solid rgb(218, 213, 248); height:80px ; width: 100%; margin-top: 20px;">
+                                            <div class="col-lg-6" style=" height: 80px;  padding-top: 30px;" id="plan">
+                                                <input type="radio" name="payment" value="mb24" id="v2"
+                                                    style="margin-right: 10px;">
+                                                24 Months
+                                            </div>
+                                            <div class="col-lg-6"
+                                                style=" height: 76px; padding-top: 20px; font-weight: bold; padding-left: 60px;">
+                                                $18.00/user
+                                                <p style="font-weight: 300;">18% Save</p>
+                                            </div>
+                                        </div>
+                                        <div class="row"
+                                            style="border: 2px solid rgb(218, 213, 248); height:80px ; width: 100%; margin-top: 20px;">
+                                            <div class="col-lg-6" style=" height: 80px;  padding-top: 30px;" id="plan">
+                                                <input type="radio" name="payment" checked value="mb36" id="v3"
+                                                    style="margin-right: 10px;">
+                                                36 Months
+                                            </div>
+                                            <div class="col-lg-6"
+                                                style=" height: 76px; padding-top: 20px; font-weight: bold; padding-left: 60px;">
+                                                $14.00/user
+                                                <p style="font-weight: 300;">36% Save</p>
+                                            </div>
+                                        </div>
+                                        <button onclick="basic()"
+                                            class="btn rounded-pill bg-blue4 fw-bold text-white px-5 mt-30"
+                                            style="margin-left: 70px;">
+                                            <small>Proceed Now </small>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="price-card">
+
+                            <div class="price-header pb-4">
+                                <!-- <h6> <img src="images/price_s4_2.png" alt class="icon"> premium Plan </h6> -->
+                                <h3>Advance</h3>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h2>$<span id="advancePlan">16.00</span><small
+                                                style="font-weight: bold;">/user</small></h2>
+                                        <p
+                                            style="background-color: rgb(240, 191, 100); padding-left: 10px; color: black; border-radius: 20px; font-weight: bold;">
+                                            With a 3-yr
+                                            plan (33% savings)</p>
+                                        <p style=" padding-left: 5px;">*Min 5 Users</p>
+                                    </div>
+                                    <!-- <div class="col-lg-6 pt-20">
+                                        <select name="cars"  onchange="valAdvance()" id="select_id_advance" style="width: 80%; height: 40px; padding: 10px; border-radius: 15px;">
+                                            <option value="1 Year">1 Year</option>
+                                            <option value="2 Year">2 Year</option>
+                                            <option value="3 Year">3 Year</option>
+                                          </select>
+                                    </div> -->
+                                    <!-- <div class="row" style="margin-top: 20px;">
+                                        <div class="commun-card hover-blue4 border-blue4  col-lg-2" >
+                                       
+                                            <div class="inf">
+                                                <input type="radio" name="advance" value="4" id="radio4" onclick="valAdvance(4)" checked>
+                                                <label  style="font-weight: bold; margin-left: 10px;" >1Y</label><br>
+                                            </div>
+                                        </div>
+                                        <div class="commun-card hover-blue4 border-blue4 col-lg-2 ">
+                                           
+                                            <div class="inf">
+                                                <input type="radio" name="advance" value="5" id="radio5" onclick="valAdvance(5)">
+                                                <label style="font-weight: bold; margin-left: 10px;"  >2Y</label><br>
+                                            </div>
+                                        </div>
+                                        <div class="commun-card hover-blue4 border-blue4 col-lg-2">
+                                            
+                                            <div class="inf">
+                                                <input type="radio" name="advance" value="6" id="radio6" onclick="valAdvance(6)" >
+                                                <label  style="font-weight: bold; margin-left: 10px;" >3Y</label><br>
+                    
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                </div>
+                                <!-- <p>Experience all premium features</p> -->
+                            </div>
+
+                            <div class="price-body py-4">
+                                <ul>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                            <!-- <i class="far fa-sticky-note"></i> -->
+                                            <!-- <i class="fa fa-arrow-right"></i> -->
+                                            <i class="fa fa-chevron-right"></i>
+                                            <!-- <i class="fa fa-chevron-down"></i> -->
+                                        </small>
+                                        <div class="row" style="width: 100%;">
+                                            <div class="col-lg-10">
+                                                <p class="fw-bold">Delivery schedule management</p>
+                                            </div>
+                                            <!-- <div class="col-lg-2">
+                                            <p>20.00$</p>
+                                        </div> -->
+
+                                        </div>
+                                    </li>
+
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                            <!-- <i class="far fa-sticky-note"></i> -->
+                                            <!-- <i class="fa fa-arrow-right"></i> -->
+                                            <i class="fa fa-chevron-right"></i>
+                                        </small>
+                                        <div class="row" style="width: 100%;">
+                                            <div class="col-lg-10">
+                                                <p class="fw-bold">Invoice or packing slip update</p>
+                                            </div>
+                                            <!-- <div class="col-lg-2">
+                                                <p>18.00$</p>
+                                            </div> -->
+                                    </li>
+
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                            <!-- <i class="far fa-sticky-note"></i> -->
+                                            <!-- <i class="fa fa-arrow-right"></i> -->
+                                            <i class="fa fa-chevron-right"></i>
+                                        </small>
+                                        <div class="row" style="width: 100%;">
+                                            <div class="col-lg-10">
+                                                <p class="fw-bold">Customer signature and comments capture</p>
+                                            </div>
+                                            <!-- <div class="col-lg-2">
+                                                <p>12.00$</p>
+                                            </div> -->
+                                    </li>
+
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                            <!-- <i class="far fa-sticky-note"></i> -->
+                                            <!-- <i class="fa fa-arrow-right"></i> -->
+                                            <i class="fa fa-chevron-right"></i>
+                                        </small>
+                                        <div class="row" style="width: 100%;">
+                                            <div class="col-lg-10">
+                                                <p class="fw-bold">QR code to pull relevant delivery document</p>
+                                            </div>
+                                            <!-- <div class="col-lg-2">
+                                                <p>12.00$</p>
+                                            </div> -->
+                                    </li>
+
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                            <!-- <i class="far fa-sticky-note"></i> -->
+                                            <!-- <i class="fa fa-arrow-right"></i> -->
+                                            <i class="fa fa-chevron-right"></i>
+
+                                        </small>
+                                        <div class="col-lg-10">
+                                            <p class="fw-bold" style="color: #8800aa;">Route tracking</p>
+                                        </div>
+                                        <!-- <div class="col-lg-2">
+                                            <p>19.00$</p>
+                                        </div> -->
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                            <i class="fa fa-chevron-right"></i>
+                                        </small>
+                                        <div class="col-lg-10">
+                                            <p class="fw-bold" style="color: #8800aa;">Multi language</p>
+                                        </div>
+                                        <!-- <div class="col-lg-2">
+                                            <p>14.00$</p>
+                                        </div> -->
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                            <!-- <i class="far fa-sticky-note"></i> -->
+                                            <!-- <i class="fa fa-arrow-right"></i> -->
+                                            <i class="fa fa-chevron-right"></i>
+                                        </small>
+                                        <div class="col-lg-10">
+                                            <p class="fw-bold" style="color: #8800aa;">Offline support</p>
+                                        </div>
+                                        <!-- <div class="col-lg-2">
+                                            <p>14.00$</p>
+                                        </div> -->
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <small
+                                            class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                                            <!-- <i class="far fa-sticky-note"></i> -->
+                                            <!-- <i class="fa fa-arrow-right"></i> -->
+                                            <i class="fa fa-chevron-right"></i>
+                                        </small>
+                                        <div class="col-lg-10">
+                                            <p class="fw-bold" style="color: #8800aa;">Delivery tracking</p>
+                                        </div>
+                                        <!-- <div class="col-lg-2">
+                                            <p>14.00$</p>
+                                        </div> -->
+                                    </li>
+                                </ul>
+                                <!-- <a id="myBtn"
+                                    class="btn rounded-pill bg-blue4 fw-bold text-white px-5 mt-50">
+                                    <small>Subscribe Now</small>
+                                </a>  -->
+                                 <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRigh"
+                                    aria-controls="offcanvasRight"
+                                    class="btn rounded-pill hover-blue4 fw-bold mt-50 px-5 border-blue4">
+                                    <small>Subscribe Now </small>
+                                </a> 
+                                
+                            </div>
+                        </div>
+                        <!-- <div class="off">
+                                <span>
+                                    20% <br> off
+                                </span>
+                            </div> -->
+                    </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRigh"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header" style="margin-top: 100px;">
+                            <h5 id="offcanvasRightLabel" style="color: #8a31ff; margin-left: 10px; font-weight: bold;">
+                                Advance Pricing Plans
+                            </h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="container">
+                                <div class="row" style="border: 2px solid rgb(218, 213, 248); width: 100%;">
+                                    <div class="col-lg-6" style=" height: 40px;  padding-top: 10px;" id="plan">
+                                        <input type="radio" name="payment2" value="ma1" id="oneMonth"
+                                            style="margin-right: 10px;">
+                                        1 Month
+                                    </div>
+                                    <div class="col-lg-6"
+                                        style=" height: 40px; padding-top: 10px; font-weight: bold; padding-left: 60px;">
+                                        <p id="price1"> $24.00/user</p>
+                                    </div>
+                                </div>
+
+                                <div class="row"
+                                    style="border: 2px solid rgb(218, 213, 248); height:80px ; width: 100%; margin-top: 20px;">
+                                    <div class="col-lg-6" style=" height: 80px;  padding-top: 30px;" id="plan">
+                                        <input type="radio" name="payment2" value="ma12" id="oneYear"
+                                            style="margin-right: 10px;">
+                                        12 Months
+                                    </div>
+                                    <div class="col-lg-6"
+                                        style=" height: 76px; padding-top: 20px; font-weight: bold; padding-left: 60px;">
+                                        <p id="price2">$22.00/user</p>
+                                        <p style="font-weight: 300;">8% Save</p>
+                                    </div>
+                                </div>
+                                <div class="row"
+                                    style="border: 2px solid rgb(218, 213, 248); height:80px ; width: 100%; margin-top: 20px;">
+                                    <div class="col-lg-6" style=" height: 80px;  padding-top: 30px;" id="plan">
+                                        <input type="radio" name="payment2" value="ma24" id="twoYear"
+                                            style="margin-right: 10px;">
+                                        24 Months
+                                    </div>
+                                    <div class="col-lg-6"
+                                        style=" height: 76px; padding-top: 20px; font-weight: bold; padding-left: 60px;">
+                                        <p id="price3"> $20.00/user</p>
+                                        <p style="font-weight: 300;">17% Save</p>
+                                    </div>
+                                </div>
+                                <div class="row"
+                                    style="border: 2px solid rgb(218, 213, 248); height:80px ; width: 100%; margin-top: 20px;">
+                                    <div class="col-lg-6" style=" height: 80px;  padding-top: 30px;" id="plan">
+                                        <input type="radio" name="payment2" value="ma36" id="threeYear" checked
+                                            style="margin-right: 10px;">
+                                        36 Months
+                                    </div>
+                                    <div class="col-lg-6"
+                                        style=" height: 76px; padding-top: 20px; font-weight: bold; padding-left: 60px;">
+                                        <p id="price4">$16.00/user</p>
+                                        <p style="font-weight: 300;">33% Save</p>
+                                    </div>
+                                </div>
+                                <button onclick="advanced()"
+                                    class="btn rounded-pill bg-blue4 fw-bold text-white px-5 mt-30"
+                                    style="margin-left: 70px;">
+                                    <small>Proceed Now </small>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script>
+        function basic() {
+            var basic = document.getElementsByName("payment");
+            basic.forEach(e => {
+                if (e.checked) {
+                    window.location.href = "./process.html?plan=" + e.value;
+                }
+            })
+        }
+        function advanced() {
+            var advanced = document.getElementsByName("payment2");
+            advanced.forEach(e => {
+                if (e.checked) {
+                    window.location.href = "./process.html?plan=" + e.value;
+                }
+            })
+        }
+    </script>
+
+    <!-- ====== start footer ====== -->
+    <footer class="style-4 pt-100 mt-0">
+        <div class="container">
+            <div class="section-head text-center style-4">
+                <h2 class="mb-10"> Ready To <span> Download </span> </h2>
+                <p>Get it from Google Play Store .</p>
+                <div class="d-flex align-items-center justify-content-center mt-50">
+                    <!-- <a href="https://www.apple.com/app-store/" class="btn rounded-pill bg-blue4 fw-bold text-white me-4" target="_blank">
+                        <small> <i class="fab fa-apple me-2 pe-2 border-end"></i> Download On App Store </small>
+                    </a> -->
+                    <a href="https://play.google.com/store/apps/details?id=com.ksp.pod_app"
+                        class="btn rounded-pill bg-blue4 fw-bold text-white me-4" target="_blank">
+                        <small> <i class="fab fa-google-play me-2 pe-2 border-end"></i> Download On Google Play </small>
+                    </a>
+                </div>
+            </div>
+
+            <div class="foot mt-80">
+                <div class="row align-items-center">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <img src="images/logo_pod.png" alt style="height: 20px; width: 80px; margin-left: 40px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="widget social-widget pl-xl-5">
+                            <h5 class="widget-title">Follow On</h5>
+                            <ul class="social-links" style="display: flex;">
+                                <!-- <li><a href="#"><i class="fab fa-facebook-f"></i></a></li> -->
+                                <li style="margin: 10px;">
+                                    <a href="https://twitter.com/kaispe_?lang=en" target="_blank"><i
+                                            class="fab fa-twitter"></i></a>
+                                </li>
+                                <li style="margin: 10px;">
+                                    <a href="https://pk.linkedin.com/company/kaispe" target="_blank"><i
+                                            class="fab fa-linkedin"></i></a>
+                                </li>
+                                <liv style="margin: 10px;">
+                                    <a href="https://www.youtube.com/@kaispe" target="_blank"><i
+                                            class="fab fa-youtube"></i></a>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="copywrite text-center">
+                <small class="small">
+                    © 2023 Copyrights by <a href="https://www.kaispe.com/" target="_blank"
+                        class="fw-bold text-decoration-underline">KAISPE</a> All Rights Reserved.
+                </small>
+            </div>
+        </div>
+    </footer>
+    <!-- ====== end footer ====== -->
+
+    <!-- ====== start to top button ====== -->
+    <a href="#" class="to_top bg-gray rounded-circle icon-40 d-inline-flex align-items-center justify-content-center">
+        <!-- <i class="bi bi-chevron-up fs-6 text-dark"></i> -->
+        <i class="fa fa-arrow-up fs-6 text-dark"></i>
+    </a>
+
+
+    <script src="js/validate.js"></script>
+
+    <!-- ====== request ====== -->
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/lity.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+    <script src="js/pace.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
